@@ -1,0 +1,79 @@
+﻿{
+  "id": "79de6ac7-e0a4-4b45-82a5-32feed55d927",
+  "name": "TransformXmlTask",
+  "friendlyName": "Transform XML with XDT",
+  "description": "Task to transform XML, like web.config files, using Microsoft's XDT",
+  "helpMarkDown": "[More Information](https://msdn.microsoft.com/en-us/library/dd465326.aspx)",
+  "category": "Utility",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "author": "Don Irwin",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "demands": [
+  ],
+  "minimumAgentVersion": "1.83.0",
+  "groups": [
+    {
+      "name": "files",
+      "displayName": "Files",
+      "isExpanded": true
+    },
+    {
+      "name": "advanced",
+      "displayName": "Advanced",
+      "isExpanded": true
+    }
+  ],
+  "inputs": [
+    {
+      "name": "sourceFile",
+      "type": "filePath",
+      "label": "Source",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Configuration file path which should be transformed.",
+      "groupName": "files"
+    },
+    {
+      "name": "transformFile",
+      "type": "filePath",
+      "label": "Transform",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "transform file path which should be used in transform.",
+      "groupName": "files"
+    },
+    {
+      "name": "destFile",
+      "type": "filePath",
+      "label": "Destination",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Destination of the transformed file.",
+      "groupName": "files"
+    },
+    {
+      "name": "failOnStandardError",
+      "type": "boolean",
+      "label": "Fail on Standard Error",
+      "defaultValue": "false",
+      "required": false,
+      "helpMarkDown": "If this is true, this task will fail if any errors are written to the StandardError stream.",
+      "groupName": "advanced"
+    }
+  ],
+  "instanceNameFormat": "TransformXmlTask",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\transform-xml.ps1",
+      "argumentFormat": "$(sourceFile) $(transformFile) $(destFile)",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

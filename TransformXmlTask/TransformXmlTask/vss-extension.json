@@ -1,0 +1,74 @@
+{
+  "manifestVersion": 1,
+  "id": "transform-xml",
+  "version": "1.0.0",
+  "name": "Transform XML",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "Task to transform XML, like web.confg files, using Microsoft's XDT.",
+  "publisher": "donirwin",
+  "public": false,
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "screenshots": [
+    {
+      "path": "img/screenshot.png"
+    }
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "tags": [
+    "XDT",
+    "configuration",
+    "transform",
+    "config",
+    "XML"
+  ],
+  "links": {
+    "home": {
+      "uri": "https://bit.ly"
+    },
+    "getstarted": {
+      "uri": "https://bit.ly"
+    },
+    "learn": {
+      "uri": "https://msdn.microsoft.com/en-us/library/dd465326.aspx"
+    },
+    "support": {
+      "uri": "https://bit.ly"
+    },
+    "repository": {
+      "uri": "https://bit.ly"
+    },
+    "issues": {
+      "uri": "https://bit.ly"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "TransformXmlTask"
+    }
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "contributions": [
+    {
+      "id": "transform-xml",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "TransformXmlTask"
+      }
+    }
+  ]
+}

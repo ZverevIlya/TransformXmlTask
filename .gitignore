@@ -21,6 +21,10 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+node_modules/
+.grunt/
+*.vsix
+*manifest
 
 # Visual Studio 2015 cache/options directory
 .vs/
