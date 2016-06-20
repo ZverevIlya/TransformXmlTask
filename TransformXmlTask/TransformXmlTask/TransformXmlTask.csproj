@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="gruntfile.js" />
+    <Content Include="license.md" />
+    <Content Include="overview.md" />
     <None Include="package.json" />
     <None Include="vss-extension.json" />
     <None Include="settings.tfx.json" />
@@ -56,7 +58,9 @@
     <Content Include="TransformXmlTask\task.json" />
     <Content Include="TransformXmlTask\icon.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>

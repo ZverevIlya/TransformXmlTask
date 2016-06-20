@@ -27,24 +27,32 @@
     "config",
     "XML"
   ],
+  "content": {
+    "details": {
+      "path": "overview.md"
+    },
+    "license": {
+      "path": "license.md"
+    }
+  },
   "links": {
     "home": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/viperguynaz/TransformXmlTask"
     },
     "getstarted": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/viperguynaz/TransformXmlTask"
     },
     "learn": {
       "uri": "https://msdn.microsoft.com/en-us/library/dd465326.aspx"
     },
     "support": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/viperguynaz/TransformXmlTask/issues"
     },
     "repository": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/viperguynaz/TransformXmlTask"
     },
     "issues": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/viperguynaz/TransformXmlTask/issues"
     }
   },
   "branding": {
@@ -54,6 +62,14 @@
   "files": [
     {
       "path": "TransformXmlTask"
+    },
+    {
+      "path": "license.md",
+      "addressable": true
+    },
+    {
+      "path": "overview.md",
+      "addressable": true
     }
   ],
   "categories": [
